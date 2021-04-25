@@ -1,0 +1,24 @@
+{
+  "name": "learningSass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "node-sass -w styles.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewrey/learningSass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewrey/learningSass/issues"
+  },
+  "homepage": "https://github.com/andrewrey/learningSass#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
