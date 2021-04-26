@@ -9,6 +9,9 @@
 
 html {
   font-size: 94.75%; }
+  @media (min-width: 40rem) {
+    html {
+      font-size: 125%; } }
 
 body {
   font-family: Arial, sans-serif;
@@ -22,6 +25,9 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 3rem 0; }
+  @media (min-width: 40rem) {
+    .container {
+      padding: 3rem 0; } }
 
 .sass-introduction {
   border: 0.05rem solid #191041;
@@ -29,6 +35,9 @@ body {
   padding: 2rem;
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
   width: 90%; }
+  @media (min-width: 40rem) {
+    .sass-introduction {
+      width: 30rem; } }
 
 .sass-introduction p {
   margin: 0; }
@@ -39,6 +48,9 @@ body {
   padding: 1rem;
   margin: 2rem 0;
   width: 90%; }
+  @media (min-width: 40rem) {
+    .sass-details {
+      width: 30rem; } }
 
 .section-header {
   border-bottom: 0.05rem solid #191041; }
@@ -69,12 +81,3 @@ body {
     color: white;
     background: #fa923f;
     border-color: #fa923f; }
-
-@media (min-width: 40rem) {
-  html {
-    font-size: 125%; }
-  .container {
-    padding: 3rem 0; }
-  .sass-introduction,
-  .sass-details {
-    width: 30rem; } }

@@ -1,5 +1,8 @@
 html {
   font-size: 94.75%;
+  @include mq(40rem) {
+    font-size: 125%;
+  }
 }
 
 body {
@@ -11,6 +14,9 @@ body {
   @include display-flex;
   @extend %sizing-and-alignment;
   padding: 3rem 0;
+  @include mq(40rem) {
+    padding: 3rem 0;
+  }
 }
 
 .sass-introduction {
@@ -20,6 +26,9 @@ body {
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
   width: 90%;
   @extend %sizing-and-alignment;
+  @include mq(40rem) {
+    width: 30rem;
+  }
 }
 
 .sass-introduction p {
@@ -33,6 +42,9 @@ body {
   @extend %sizing-and-alignment;
   margin: 2rem 0;
   width: 90%;
+  @include mq(40rem) {
+    width: 30rem;
+  }
 }
 
 .section-header {
@@ -63,20 +75,5 @@ body {
     color: white;
     background: map-get($map: $colors, $key: secondary);
     border-color: map-get($map: $colors, $key: secondary);
-  }
-}
-
-@media (min-width: 40rem) {
-  html {
-    font-size: 125%;
-  }
-
-  .container {
-    padding: 3rem 0;
-  }
-
-  .sass-introduction,
-  .sass-details {
-    width: 30rem;
   }
 }

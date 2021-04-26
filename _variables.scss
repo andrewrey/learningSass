@@ -23,3 +23,9 @@ $border-default: 0.05rem solid
   align-items: center;
   box-sizing: border-box;
 }
+
+@mixin mq($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
