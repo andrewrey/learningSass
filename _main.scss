@@ -57,11 +57,11 @@ body {
     display: block;
     padding: 0.2rem;
     border: $border-default;
-  }
-  .documentation-link:hover,
-  .documentation-links .documentation-link:active {
-    color: white;
-    background: map-get($map: $colors, $key: secondary);
-    border-color: map-get($map: $colors, $key: secondary);
+    &:hover,
+    &:active {
+      color: white;
+      background: map-get($map: $colors, $key: secondary);
+      border-color: map-get($map: $colors, $key: secondary);
+    }
   }
 }
