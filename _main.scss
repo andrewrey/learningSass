@@ -20,15 +20,9 @@ body {
 }
 
 .sass-introduction {
-  border: $border-default;
-  background: lighten($color: map-get($colors, main), $amount: 72%);
   padding: 2rem;
   box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
-  width: 90%;
-  @extend %sizing-and-alignment;
-  @include mq(40rem) {
-    width: 30rem;
-  }
+  @extend %sass-section;
 }
 
 .sass-introduction p {
@@ -36,15 +30,9 @@ body {
 }
 
 .sass-details {
-  border: $border-default;
-  background: lighten($color: map-get($colors, main), $amount: 72%);
+  @extend %sass-section;
   padding: 1rem;
-  @extend %sizing-and-alignment;
   margin: 2rem 0;
-  width: 90%;
-  @include mq(40rem) {
-    width: 30rem;
-  }
 }
 
 .section-header {

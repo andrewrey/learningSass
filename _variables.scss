@@ -29,3 +29,13 @@ $border-default: 0.05rem solid
     @content;
   }
 }
+
+%sass-section {
+  border: $border-default;
+  background: lighten($color: map-get($colors, main), $amount: 72%);
+  width: 90%;
+  @extend %sizing-and-alignment;
+  @include mq(40rem) {
+    width: 30rem;
+  }
+}

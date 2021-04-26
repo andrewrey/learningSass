@@ -1,6 +1,14 @@
-.container, .sass-introduction, .sass-details {
+.sass-introduction, .sass-details, .container {
   align-items: center;
   box-sizing: border-box; }
+
+.sass-introduction, .sass-details {
+  border: 0.05rem solid #191041;
+  background: #d4cdf3;
+  width: 90%; }
+  @media (min-width: 40rem) {
+    .sass-introduction, .sass-details {
+      width: 30rem; } }
 
 .char-highlight {
   font-weight: bold;
@@ -30,27 +38,15 @@ body {
       padding: 3rem 0; } }
 
 .sass-introduction {
-  border: 0.05rem solid #191041;
-  background: #d4cdf3;
   padding: 2rem;
-  box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
-  width: 90%; }
-  @media (min-width: 40rem) {
-    .sass-introduction {
-      width: 30rem; } }
+  box-shadow: 0.2rem 0.2rem 0.1rem #ccc; }
 
 .sass-introduction p {
   margin: 0; }
 
 .sass-details {
-  border: 0.05rem solid #191041;
-  background: #d4cdf3;
   padding: 1rem;
-  margin: 2rem 0;
-  width: 90%; }
-  @media (min-width: 40rem) {
-    .sass-details {
-      width: 30rem; } }
+  margin: 2rem 0; }
 
 .section-header {
   border-bottom: 0.05rem solid #191041; }
